@@ -1,0 +1,206 @@
+name: Z-Search
+desc: 快捷切换聚合搜索引擎 (改)
+author: Neurogram-R、zZPiglet、ddgksf2013、NobodyHere-rrrr (改)
+homepage: "https://github.com/Coldvvater/Mononoke/tree/master/Clash/StashOverride/Tool"
+icon: "https://github.com/Coldvvater/Coldvvater/blob/master/img-folder/Q.png?raw=true"
+category: "Search"
+###########################################################
+# - Safari 内输入 命令 + 空格 + 关键词 快速指定搜索引擎搜索
+# - 注：请先进入设置更改 Safari 默认搜索为 DuckDuckGO
+###########################################################
+http:
+  mitm:
+    - "duckduckgo.com"
+  rewrite:
+    # wikien xxx (Wikipedia)
+    - ^https:\/\/duckduckgo.com\/\?q=wikien(\+|%20)([^&]+).+ https://wikipedia.org/wiki/$2 302
+
+    # wiki xxx (Wikipedia 中文)
+    - ^https:\/\/duckduckgo.com\/\?q=wiki(\+|%20)([^&]+).+ https://zh.wikipedia.org/wiki/$2 302
+
+    # bing xxx (必应)
+    - ^https:\/\/duckduckgo.com\/\?q=bing\+([^&]+).+ https://cn.bing.com/search?q=$1 302
+    
+    # gf xxx (Greasy Fork)
+    - ^https:\/\/duckduckgo.com\/\?q=gf\+([^&]+).+ https://greasyfork.org/zh-CN/scripts?q=$1 302
+    
+    # sf xxx (Sleazy Fork)
+    - ^https:\/\/duckduckgo.com\/\?q=sf\+([^&]+).+ https://sleazyfork.org/zh-CN/scripts?q=$1 302
+
+    # gh xxx (GitHub)
+    - ^https:\/\/duckduckgo.com\/\?q=gh(\+|%20)([^&]+).+ https://github.com/search?q=$2 302
+    
+    # gu xxx (GitHub User)
+    - ^https:\/\/duckduckgo.com\/\?q=gu\+([^&]+).+ https://github.com/search?q=$1&type=users 302
+    
+    # gc xxx (GitHub Code)
+    - ^https:\/\/duckduckgo.com\/\?q=gc\+([^&]+).+ https://github.com/search?o=desc&q=$1&s=indexed&type=Code 302
+
+    # tf xxx (Google 搜索 TestFlight)
+    - ^https:\/\/duckduckgo.com\/\?q=tf(\+|%20)([^&]+).+ https://www.google.com/search?as_q=$2&as_sitesearch=testflight.apple.com 302
+
+    # gi xxx (Google 图片)
+    - ^https:\/\/duckduckgo.com\/\?q=gi(\+|%20)([^&]+).+ https://www.google.com/search?&tbm=isch&q=$2 302
+
+    # yd xxx (有道词典)
+    - ^https:\/\/duckduckgo.com\/\?q=yd(\+|%20)([^&]+).+ https://dict.youdao.com/search?q=$2 302
+
+    # cls xxx (柯林斯)
+    - ^https:\/\/duckduckgo.com\/\?q=cls(\+|%20)([^&]+).+ https://www.collinsdictionary.com/zh/dictionary/english/$2 302
+
+    # cbd xxx (劍橋)
+    - ^https:\/\/duckduckgo.com\/\?q=cbd(\+|%20)([^&]+).+ https://dictionary.cambridge.org/zhs/搜索/direct/?datasetsearch=english&q=$2 302
+
+    # oed xxx (牛津)
+    - ^https:\/\/duckduckgo.com\/\?q=oed(\+|%20)([^&]+).+ https://www.oed.com/search/dictionary/?scope=Entries&q=$2 302
+
+    # ubd xxx (Urban Dictionary)
+    - ^https:\/\/duckduckgo.com\/\?q=ubd(\+|%20)([^&]+).+ https://www.urbandictionary.com/define.php?term=$2 302
+
+    # gtc xxx (Google 译至中)
+    - ^https:\/\/duckduckgo.com\/\?q=gtc(\+|%20)([^&]+).+ https://translate.google.com/#view=home&op=translate&sl=auto&tl=zh-CN&text=$2 302
+
+    # gte xxx (Google 译至英)
+    - ^https:\/\/duckduckgo.com\/\?q=gte(\+|%20)([^&]+).+ https://translate.google.com/#view=home&op=translate&sl=auto&tl=en&text=$2 302
+
+    # gtj xxx (Google 译至日)
+    - ^https:\/\/duckduckgo.com\/\?q=gtj(\+|%20)([^&]+).+ https://translate.google.com/#view=home&op=translate&sl=auto&tl=ja&text=$2 302
+
+    # ytb xxx (YouTube)
+    - ^https:\/\/duckduckgo.com\/\?q=ytb(\+|%20)([^&]+).+ https://www.youtube.com/results?search_query=$2 302
+    
+    # af xxx (Acfun)
+    - ^https:\/\/duckduckgo.com\/\?q=af\+([^&]+).+ https://www.acfun.cn/search?keyword=$1 302
+
+    # so xxx (Stack Overflow)
+    - ^https:\/\/duckduckgo.com\/\?q=so(\+|%20)([^&]+).+ https://stackoverflow.com/search?q=$2 302
+
+    # se xxx (StackExchange)
+    - ^https:\/\/duckduckgo.com\/\?q=se(\+|%20)([^&]+).+ https://stackexchange.com/search?q=$2 302
+
+    # wa xxx (WolframAlpha)
+    - ^https:\/\/duckduckgo.com\/\?q=wa(\+|%20)([^&]+).+ https://www.wolframalpha.com/input/?i=$2 302
+
+    # zh xxx (知乎)
+    - ^https:\/\/duckduckgo.com\/\?q=zh(\+|%20)([^&]+).+ https://www.zhihu.com/search?q=$2 302
+
+    # rd xxx (Reddit)
+    - ^https:\/\/duckduckgo.com\/\?q=rd(\+|%20)([^&]+).+ https://www.reddit.com/search?q=$2 302
+
+    # x xxx (Twitter)
+    - ^https:\/\/duckduckgo.com\/\?q=x(\+|%20)([^&]+).+ https://twitter.com/search?q=$2 302
+
+    # gd xxx (Google 搜索 Google Drive 资源)
+    - ^https:\/\/duckduckgo.com\/\?q=gd(\+|%20)([^&]+).+ https://www.google.com/search?q=%22Google+Drive%22+$2 302
+
+    # gd2 xxx (t.me/gdsharing 搜索 Google Drive 资源)
+    - ^https:\/\/duckduckgo.com\/\?q=gd2(\+|%20)([^&]+).+ https://t.me/s/gdsharing?q=$2 302
+
+    # al xxx (t.me/shareAliyun 搜索阿里云盘资源)
+    - ^https:\/\/duckduckgo.com\/\?q=al(\+|%20)([^&]+).+ https://t.me/s/shareAliyun?q=$2 302
+
+    # al2 xxx (t.me/YunPanPan 搜索阿里云盘资源)
+    - ^https:\/\/duckduckgo.com\/\?q=al2(\+|%20)([^&]+).+ https://t.me/s/YunPanPan?q=$2 302
+
+    # rut xxx (Google 搜索 rutracker)
+    - ^https:\/\/duckduckgo.com\/\?q=rut(\+|%20)([^&]+).+ https://www.google.com/search?as_q=$2&as_sitesearch=rutracker.org 302
+
+    # nyaa xxx (nyaa 表)
+    - ^https:\/\/duckduckgo.com\/\?q=nyaa(\+|%20)([^&]+).+ https://nyaa.si/?q=$2&f=0&c=0_0 302
+
+    # skb xxx (nyaa 裏)
+    - ^https:\/\/duckduckgo.com\/\?q=skb(\+|%20)([^&]+).+ https://sukebei.nyaa.si/?q=$2&f=0&c=0_0 302
+
+    # tpb xxx (The Pirate Bay)
+    - ^https:\/\/duckduckgo.com\/\?q=tpb(\+|%20)([^&]+).+ https://thepiratebay.org/search.php?q=$2&all=on&search=Pirate+Search&page=0&orderby= 302
+
+    # thb xxx (THBWiki)
+    - ^https:\/\/duckduckgo.com\/\?q=thb(\+|%20)([^&]+).+ https://thwiki.cc/index.php?search=$2 302
+
+    # pvi xxx (Pixiv 圖片)
+    - ^https:\/\/duckduckgo.com\/\?q=pvi(\+|%20)([^&]+).+ https://www.pixiv.net/tags/$2/illustrations 302
+
+    # pvu xxx (Pixiv 用戶)
+    - ^https:\/\/duckduckgo.com\/\?q=pvu(\+|%20)([^&]+).+ https://www.pixiv.net/search_user.php?nick=$2 302
+
+    # eh xxx (E-hentai)
+    - ^https:\/\/duckduckgo.com\/\?q=eh(\+|%20)([^&]+).+ https://e-hentai.org/?f_search=$2 302
+
+    # nh xxx (Nhentai)
+    - ^https:\/\/duckduckgo.com\/\?q=nh(\+|%20)([^&]+).+ https://nhentai.net/search/?q=$2 302
+
+    # iwv xxx (iwara 視頻)
+    - ^https:\/\/duckduckgo.com\/\?q=iwv(\+|%20)([^&]+).+ https://www.iwara.tv/search?type=video&page=0&query=$2 302
+
+    # iwi xxx (iwara 圖片)
+    - ^https:\/\/duckduckgo.com\/\?q=iwi(\+|%20)([^&]+).+ https://www.iwara.tv/search?type=image&page=0&query=$2 302
+
+    # iwu xxx (iwara 用戶)
+    - ^https:\/\/duckduckgo.com\/\?q=iwi(\+|%20)([^&]+).+ https://www.iwara.tv/search?type=user&page=0&query=$2 302
+
+    # zi xxx (字統网)
+    - ^https:\/\/duckduckgo.com\/\?q=zi(\+|%20)([^&]+).+ https://zi.tools/zi/$2 302
+
+    # mccd xxx (漢語多功能字庫)
+    - ^https:\/\/duckduckgo.com\/\?q=mccd(\+|%20)([^&]+).+ https://humanum.arts.cuhk.edu.hk//Lexis/lexi-mf/search.php?word=$2 302
+
+    # ccc xxx (古今文字集成)
+    - ^https:\/\/duckduckgo.com\/\?q=ccc(\+|%20)([^&]+).+ http://ccamc.org/cjkv.php?cjkv=$2 302
+
+    # glp xxx (GlyphWiki)
+    - ^https:\/\/duckduckgo.com\/\?q=glp(\+|%20)([^&]+).+ http://zht.glyphwiki.org/wiki/Special:Search?search=$2 302
+
+    # vd xxx (《異體字字典》)
+    - ^https:\/\/duckduckgo.com\/\?q=vd(\+|%20)([^&]+).+ https://dict.variants.moe.edu.tw/search.jsp?QTP=0&WORD=$2#searchL 302
+
+    # mdc xxx (《國語辭典簡編本》)
+    - ^https:\/\/duckduckgo.com\/\?q=mdc(\+|%20)([^&]+).+ https://dict.concised.moe.edu.tw/search.jsp?md=1&word=$2#searchL 302
+
+    # mdr xxx (《重編國語辭典修訂本》)
+    - ^https:\/\/duckduckgo.com\/\?q=mdr(\+|%20)([^&]+).+ https://dict.revised.moe.edu.tw/search.jsp?md=1&word=$2#searchL 302
+
+    # moe xxx (萌典)
+    - ^https:\/\/duckduckgo.com\/\?q=moe(\+|%20)([^&]+).+ https://www.moedict.tw/$2 302
+
+    # arch xxx (Arch Linux Wiki)
+    - ^https:\/\/duckduckgo.com\/\?q=arch(\+|%20)([^&]+).+ https://www.moedict.tw/$https://wiki.archlinux.org/index.php?search=$2 302
+
+    # archcn xxx (Arch Linux CN Wiki)
+    - ^https:\/\/duckduckgo.com\/\?q=archcn(\+|%20)([^&]+).+ https://wiki.archlinuxcn.org/wzh/index.php?search=$2 302
+
+    # xxx （默认为 4get）
+    - ^https:\/\/duckduckgo.com\/\?q=(?!dl(c|e|j)(\+|%20))([^&]+).+ https://4get.ca/web?s=$3 302
+    
+  script:
+    # dlc xxx (DeepL 译至中)
+    - match: ^https:\/\/duckduckgo.com\/\?q=dlc(\+|%20)([^&]+).+
+      name: dlc
+      type: request
+      require-body: true
+      timeout: 10
+    # dle xxx (DeepL 译至英)
+    - match: ^https:\/\/duckduckgo.com\/\?q=dle(\+|%20)([^&]+).+
+      name: dle
+      type: request
+      require-body: true
+      timeout: 10
+    # dlj xxx (DeepL 译至日)
+    - match: ^https:\/\/duckduckgo.com\/\?q=dlj(\+|%20)([^&]+).+
+      name: dlj
+      type: request
+      require-body: true
+      timeout: 10
+      
+script-providers:
+  # dlc xxx (DeepL 译至中)
+  dlc:
+    url: https://raw.githubusercontent.com/zZPiglet/Task/master/asset/DeepLQ-search.js
+    interval: 86400
+  # dle xxx (DeepL 译至英)
+  dle:
+    url: https://raw.githubusercontent.com/zZPiglet/Task/master/asset/DeepLQ-search.js
+    interval: 86400
+  # dlj xxx (DeepL 译至日)
+  dlj:
+    url: https://raw.githubusercontent.com/zZPiglet/Task/master/asset/DeepLQ-search.js
+    interval: 86400
