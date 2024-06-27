@@ -1,7 +1,7 @@
 name: Z-Search
 desc: 快捷切换聚合搜索引擎 (改)
 author: Neurogram-R、zZPiglet、ddgksf2013、NobodyHere-rrrr (改)
-homepage: "https://github.com/NobodyHere-rrr/Stash-Override"
+homepage: "https://github.com/Coldvvater/Mononoke/tree/master/Clash/StashOverride/Tool"
 icon: "https://github.com/Coldvvater/Coldvvater/blob/master/img-folder/Q.png?raw=true"
 category: "Search"
 ###########################################################
@@ -13,10 +13,10 @@ http:
     - "duckduckgo.com"
   rewrite:
     # wikien xxx (Wikipedia)
-    - ^https:\/\/duckduckgo.com\/\?q=wikien(\+|%20)([^&]+).+ https://wikipedia.org/wiki/$2 302
+    - ^https:\/\/duckduckgo.com\/\?q=wikien(\+|%20)([^&]+).+ https://en.wikipedia.org/w/index.php?search=$2 302
 
     # wiki xxx (Wikipedia 中文)
-    - ^https:\/\/duckduckgo.com\/\?q=wiki(\+|%20)([^&]+).+ https://zh.wikipedia.org/wiki/$2 302
+    - ^https:\/\/duckduckgo.com\/\?q=wiki(\+|%20)([^&]+).+ https://zh.wikipedia.org/w/index.php?search=$2 302
 
     # bing xxx (必应)
     - ^https:\/\/duckduckgo.com\/\?q=bing\+([^&]+).+ https://cn.bing.com/search?q=$1 302
