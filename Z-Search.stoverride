@@ -171,6 +171,12 @@ http:
     # sdb xxx (SteamDB)
     - ^https:\/\/duckduckgo.com\/\?q=sdb(\+|%20)([^&]+).+ https://steamdb.info/search/?a=all&q=$2 302
 
+    # zlib xxx (Z-Library)
+    - ^https:\/\/duckduckgo.com\/\?q=zlib(\+|%20)([^&]+).+ https://zh.singlelogin.re/s/?q=$2 302
+
+    # lg xxx (Library Genesis)
+    - ^https:\/\/duckduckgo.com\/\?q=lg(\+|%20)([^&]+).+ http://libgen.rs/search.php?req=$2 302
+
     # xxx （默认为 4get）
     - ^https:\/\/duckduckgo.com\/\?q=(?!dl(c|e|j)(\+|%20))([^&]+).+ https://4get.ca/web?s=$3 302
     
