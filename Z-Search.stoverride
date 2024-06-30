@@ -18,6 +18,9 @@ http:
     # wiki xxx (Wikipedia 中文)
     - ^https:\/\/duckduckgo.com\/\?q=wiki(\+|%20)([^&]+).+ https://zh.wikipedia.org/w/index.php?search=$2 302
 
+    # mgp xxx (萌百)
+    - ^https:\/\/duckduckgo.com\/\?q=mgp(\+|%20)([^&]+).+ https://mzh.moegirl.org.cn/index.php?search=$2
+
     # bing xxx (必应)
     - ^https:\/\/duckduckgo.com\/\?q=bing\+([^&]+).+ https://cn.bing.com/search?q=$1 302
     
