@@ -16,7 +16,7 @@ http:
     - ^https:\/\/duckduckgo.com\/\?q=wikien(\+|%20)([^&]+).+ https://en.wikipedia.org/w/index.php?search=$2 302
 
     # wiki xxx (Wikipedia 中文)
-    - ^https:\/\/duckduckgo.com\/\?q=wiki(\+|%20)([^&]+).+ https://zh.wikipedia.org/w/index.php?search=$2 302
+    - ^https:\/\/duckduckgo.com\/\?q=wiki(\+|%20)([^&]+).+ https://zh.m.wikipedia.org/w/index.php?search=$2 302
 
     # mgp xxx (萌百)
     - ^https:\/\/duckduckgo.com\/\?q=mgp(\+|%20)([^&]+).+ https://mzh.moegirl.org.cn/index.php?search=$2 302
