@@ -126,6 +126,9 @@ http:
     # pvu xxx (Pixiv 用戶)
     - ^https:\/\/duckduckgo.com\/\?q=pvu(\+|%20)([^&]+).+ https://www.pixiv.net/search_user.php?nick=$2 302
 
+	# pid xxx (Pixiv 圖片ID)
+    - ^https:\/\/duckduckgo.com\/\?q=pid(\+|%20)([^&]+).+ https://www.pixiv.net/artworks/$2 302
+
     # eh xxx (E-hentai)
     - ^https:\/\/duckduckgo.com\/\?q=eh(\+|%20)([^&]+).+ https://e-hentai.org/?f_search=$2 302
 
