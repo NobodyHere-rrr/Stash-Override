@@ -74,6 +74,9 @@ http:
     
     # acf xxx (Acfun)
     - ^https:\/\/duckduckgo.com\/\?q=acf\+([^&]+).+ https://www.acfun.cn/search?keyword=$1 302
+    
+    # nico xxx (Niconico)
+    - ^https:\/\/duckduckgo.com\/\?q=nico\+([^&]+).+ https://sp.nicovideo.jp/search/$1 302
 
     # so xxx (Stack Overflow)
     - ^https:\/\/duckduckgo.com\/\?q=so(\+|%20)([^&]+).+ https://stackoverflow.com/search?q=$2 302
