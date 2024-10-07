@@ -126,6 +126,9 @@ http:
     # pvi xxx (Pixiv 圖片)
     - ^https:\/\/duckduckgo.com\/\?q=pvi(\+|%20)([^&]+).+ https://www.pixiv.net/tags/$2/illustrations 302
 
+    # pid xxx (Pixiv 圖片ID)
+    - ^https:\/\/duckduckgo.com\/\?q=pid(\+|%20)([^&]+).+ https://www.pixiv.net/artworks/$2 302
+
     # pvu xxx (Pixiv 用戶)
     - ^https:\/\/duckduckgo.com\/\?q=pvu(\+|%20)([^&]+).+ https://www.pixiv.net/search_user.php?nick=$2 302
 
