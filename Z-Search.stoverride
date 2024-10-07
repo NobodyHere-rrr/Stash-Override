@@ -126,9 +126,6 @@ http:
     # pvu xxx (Pixiv 用戶)
     - ^https:\/\/duckduckgo.com\/\?q=pvu(\+|%20)([^&]+).+ https://www.pixiv.net/search_user.php?nick=$2 302
 
-	# pid xxx (Pixiv 圖片ID)
-    - ^https:\/\/duckduckgo.com\/\?q=pid(\+|%20)([^&]+).+ https://www.pixiv.net/artworks/$2 302
-
     # eh xxx (E-hentai)
     - ^https:\/\/duckduckgo.com\/\?q=eh(\+|%20)([^&]+).+ https://e-hentai.org/?f_search=$2 302
 
@@ -143,6 +140,9 @@ http:
 
     # ccc xxx (古今文字集成)
     - ^https:\/\/duckduckgo.com\/\?q=ccc(\+|%20)([^&]+).+ http://ccamc.org/cjkv.php?cjkv=$2 302
+
+    # hzy xxx (字源)
+    - ^https:\/\/duckduckgo.com\/\?q=hzy(\+|%20)([^&]+).+ https://hanziyuan.net/#$2 302
 
     # glp xxx (GlyphWiki)
     - ^https:\/\/duckduckgo.com\/\?q=glp(\+|%20)([^&]+).+ http://zht.glyphwiki.org/wiki/Special:Search?search=$2 302
