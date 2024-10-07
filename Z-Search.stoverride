@@ -72,8 +72,8 @@ http:
     # ytb xxx (YouTube)
     - ^https:\/\/duckduckgo.com\/\?q=ytb(\+|%20)([^&]+).+ https://www.youtube.com/results?search_query=$2 302
     
-    # af xxx (Acfun)
-    - ^https:\/\/duckduckgo.com\/\?q=af\+([^&]+).+ https://www.acfun.cn/search?keyword=$1 302
+    # acf xxx (Acfun)
+    - ^https:\/\/duckduckgo.com\/\?q=acf\+([^&]+).+ https://www.acfun.cn/search?keyword=$1 302
 
     # so xxx (Stack Overflow)
     - ^https:\/\/duckduckgo.com\/\?q=so(\+|%20)([^&]+).+ https://stackoverflow.com/search?q=$2 302
@@ -125,6 +125,9 @@ http:
 
     # pvu xxx (Pixiv 用戶)
     - ^https:\/\/duckduckgo.com\/\?q=pvu(\+|%20)([^&]+).+ https://www.pixiv.net/search_user.php?nick=$2 302
+
+	# pid xxx (Pixiv 圖片ID)
+    - ^https:\/\/duckduckgo.com\/\?q=pid(\+|%20)([^&]+).+ https://www.pixiv.net/artworks/$2 302
 
     # eh xxx (E-hentai)
     - ^https:\/\/duckduckgo.com\/\?q=eh(\+|%20)([^&]+).+ https://e-hentai.org/?f_search=$2 302
