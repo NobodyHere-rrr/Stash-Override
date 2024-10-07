@@ -144,9 +144,6 @@ http:
     # ccc xxx (古今文字集成)
     - ^https:\/\/duckduckgo.com\/\?q=ccc(\+|%20)([^&]+).+ http://ccamc.org/cjkv.php?cjkv=$2 302
 
-    # hzy xxx (字源)
-    - ^https:\/\/duckduckgo.com\/\?q=hzy(\+|%20)([^&]+).+ https://hanziyuan.net/$2 302
-
     # glp xxx (GlyphWiki)
     - ^https:\/\/duckduckgo.com\/\?q=glp(\+|%20)([^&]+).+ http://zht.glyphwiki.org/wiki/Special:Search?search=$2 302
 
