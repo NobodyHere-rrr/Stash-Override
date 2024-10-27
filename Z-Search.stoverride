@@ -15,6 +15,9 @@ http:
     # wikien xxx (Wikipedia)
     - ^https:\/\/duckduckgo.com\/\?q=wikien(\+|%20)([^&]+).+ https://en.m.wikipedia.org/w/index.php?search=$2 302
 
+    # wikijp xxx (Wikipedia 日本語)
+    - ^https:\/\/duckduckgo.com\/\?q=wikien(\+|%20)([^&]+).+ https://ja.m.wikipedia.org/w/index.php?search=$2 302
+
     # wiki xxx (Wikipedia 中文)
     - ^https:\/\/duckduckgo.com\/\?q=wiki(\+|%20)([^&]+).+ https://zh.m.wikipedia.org/w/index.php?search=$2 302
 
@@ -63,14 +66,20 @@ http:
     # ubd xxx (Urban Dictionary)
     - ^https:\/\/duckduckgo.com\/\?q=ubd(\+|%20)([^&]+).+ https://www.urbandictionary.com/define.php?term=$2 302
 
-    # gtc xxx (Google 译至中)
-    - ^https:\/\/duckduckgo.com\/\?q=gtc(\+|%20)([^&]+).+ https://translate.google.com/#view=home&op=translate&sl=auto&tl=zh-CN&text=$2 302
+    # ltc xxx (Lingva 译至中)
+    - ^https:\/\/duckduckgo.com\/\?q=ltc(\+|%20)([^&]+).+ https://lingva.ml/auto/zh_HANT/$2 302
 
-    # gte xxx (Google 译至英)
-    - ^https:\/\/duckduckgo.com\/\?q=gte(\+|%20)([^&]+).+ https://translate.google.com/#view=home&op=translate&sl=auto&tl=en&text=$2 302
+    # lte xxx (Lingva 译至英)
+    - ^https:\/\/duckduckgo.com\/\?q=lte(\+|%20)([^&]+).+ https://lingva.ml/auto/en/$2 302
 
-    # gtj xxx (Google 译至日)
-    - ^https:\/\/duckduckgo.com\/\?q=gtj(\+|%20)([^&]+).+ https://translate.google.com/#view=home&op=translate&sl=auto&tl=ja&text=$2 302
+    # ltj xxx (Lingva 译至日)
+    - ^https:\/\/duckduckgo.com\/\?q=ltj(\+|%20)([^&]+).+ https://lingva.ml/auto/ja/$2 302
+
+    # ltf xxx (Lingva 译至灋)
+    - ^https:\/\/duckduckgo.com\/\?q=ltj(\+|%20)([^&]+).+ https://lingva.ml/auto/fr/$2 302
+
+    # ltd xxx (Lingva 译至德)
+    - ^https:\/\/duckduckgo.com\/\?q=ltj(\+|%20)([^&]+).+ https://lingva.ml/auto/de/$2 302
 
     # ytb xxx (YouTube)
     - ^https:\/\/duckduckgo.com\/\?q=ytb(\+|%20)([^&]+).+ https://www.youtube.com/results?search_query=$2 302
@@ -178,7 +187,7 @@ http:
     - ^https:\/\/duckduckgo.com\/\?q=sdb(\+|%20)([^&]+).+ https://steamdb.info/search/?a=all&q=$2 302
 
     # zlib xxx (Z-Library)
-    - ^https:\/\/duckduckgo.com\/\?q=zlib(\+|%20)([^&]+).+ https://zh.singlelogin.re/s/?q=$2 302
+    - ^https:\/\/duckduckgo.com\/\?q=zlib(\+|%20)([^&]+).+ https://zh.z-library.sk/s/?q=$2 302
 
     # lg xxx (Library Genesis)
     - ^https:\/\/duckduckgo.com\/\?q=lg(\+|%20)([^&]+).+ http://libgen.rs/search.php?req=$2 302
