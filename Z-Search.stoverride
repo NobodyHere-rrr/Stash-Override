@@ -16,7 +16,7 @@ http:
     - ^https:\/\/duckduckgo.com\/\?q=wikien(\+|%20)([^&]+).+ https://en.m.wikipedia.org/w/index.php?search=$2 302
 
     # wikijp xxx (Wikipedia 日本語)
-    - ^https:\/\/duckduckgo.com\/\?q=wikien(\+|%20)([^&]+).+ https://ja.m.wikipedia.org/w/index.php?search=$2 302
+    - ^https:\/\/duckduckgo.com\/\?q=wikijp(\+|%20)([^&]+).+ https://ja.m.wikipedia.org/w/index.php?search=$2 302
 
     # wiki xxx (Wikipedia 中文)
     - ^https:\/\/duckduckgo.com\/\?q=wiki(\+|%20)([^&]+).+ https://zh.m.wikipedia.org/w/index.php?search=$2 302
