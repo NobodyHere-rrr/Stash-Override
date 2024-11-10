@@ -171,8 +171,11 @@ http:
     # mdc xxx (《國語辭典簡編本》)
     - ^https:\/\/duckduckgo.com\/\?q=mdc(\+|%20)([^&]+).+ https://dict.concised.moe.edu.tw/search.jsp?md=1&word=$2#searchL 302
 
-    # mdr xxx (《重編國語辭典修訂本》)
+    # mdr xxx (《敎育部成語典》)
     - ^https:\/\/duckduckgo.com\/\?q=mdr(\+|%20)([^&]+).+ https://dict.revised.moe.edu.tw/search.jsp?md=1&word=$2#searchL 302
+
+    # id xxx (《重編國語辭典修訂本》)
+    - ^https:\/\/duckduckgo.com\/\?q=id(\+|%20)([^&]+).+ https://dict.idioms.moe.edu.tw/idiomList.jsp?idiom=$2&qMd=0&qTp=1&qTp=2 302
 
     # moe xxx (萌典)
     - ^https:\/\/duckduckgo.com\/\?q=moe(\+|%20)([^&]+).+ https://www.moedict.tw/$2 302
