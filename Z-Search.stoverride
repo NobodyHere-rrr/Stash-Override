@@ -132,6 +132,9 @@ http:
     # tpb xxx (The Pirate Bay)
     - ^https:\/\/duckduckgo.com\/\?q=tpb(\+|%20)([^&]+).+ https://thepiratebay.org/search.php?q=$2&all=on&search=Pirate+Search&page=0&orderby= 302
 
+    # mkp xxx (mikan project)
+    - ^https:\/\/duckduckgo.com\/\?q=mkp(\+|%20)([^&]+).+ https://mikanani.me/Home/Search?searchstr=$2 302
+
     # thb xxx (THBWiki)
     - ^https:\/\/duckduckgo.com\/\?q=thb(\+|%20)([^&]+).+ https://thwiki.cc/index.php?search=$2 302
 
