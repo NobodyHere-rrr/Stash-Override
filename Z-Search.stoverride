@@ -153,6 +153,15 @@ http:
     # nh xxx (Nhentai)
     - ^https:\/\/duckduckgo.com\/\?q=nh(\+|%20)([^&]+).+ https://nhentai.net/search/?q=$2 302
 
+    # iwv xxx (iwara video)
+    - ^https:\/\/duckduckgo.com\/\?q=iwv(\+|%20)([^&]+).+ https://www.iwara.tv/search?type=video&page=0&query=$2 302
+
+    # iwu xxx (iwara user)
+    - ^https:\/\/duckduckgo.com\/\?q=iwu(\+|%20)([^&]+).+ https://www.iwara.tv/search?type=user&page=0&query=$2 302
+
+    # kmn xxx (Kemono)
+    - ^https:\/\/duckduckgo.com\/\?q=kmn(\+|%20)([^&]+).+ https://kemono.su/artists?q=$2 302
+
     # zi xxx (字統网)
     - ^https:\/\/duckduckgo.com\/\?q=zi(\+|%20)([^&]+).+ https://zi.tools/zi/$2 302
 
