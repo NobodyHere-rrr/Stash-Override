@@ -192,11 +192,11 @@ http:
     # moe xxx (萌典)
     - ^https:\/\/duckduckgo.com\/\?q=moe(\+|%20)([^&]+).+ https://www.moedict.tw/$2 302
 
-    # arch xxx (Arch Linux Wiki)
-    - ^https:\/\/duckduckgo.com\/\?q=arch(\+|%20)([^&]+).+ https://www.moedict.tw/$https://wiki.archlinux.org/index.php?search=$2 302
+    # alw xxx (Arch Linux Wiki)
+    - ^https:\/\/duckduckgo.com\/\?q=alw(\+|%20)([^&]+).+ https://wiki.archlinux.org/index.php?search=$2 302
 
-    # archcn xxx (Arch Linux CN Wiki)
-    - ^https:\/\/duckduckgo.com\/\?q=archcn(\+|%20)([^&]+).+ https://wiki.archlinuxcn.org/wzh/index.php?search=$2 302
+    # alcn xxx (Arch Linux CN Wiki)
+    - ^https:\/\/duckduckgo.com\/\?q=alcn(\+|%20)([^&]+).+ https://wiki.archlinuxcn.org/wzh/index.php?search=$2 302
 
     # sdb xxx (SteamDB)
     - ^https:\/\/duckduckgo.com\/\?q=sdb(\+|%20)([^&]+).+ https://steamdb.info/search/?a=all&q=$2 302
