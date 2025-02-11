@@ -66,20 +66,35 @@ http:
     # ubd xxx (Urban Dictionary)
     - ^https:\/\/duckduckgo.com\/\?q=ubd(\+|%20)([^&]+).+ https://www.urbandictionary.com/define.php?term=$2 302
 
+    # gtc xxx (Google 译至中)
+    - ^https:\/\/duckduckgo.com\/\?q=gtc(\+|%20)([^&]+).+ https://translate.google.com/?sl=auto&tl=zh-TW&text=$2&op=translate 302
+
     # ltc xxx (Lingva 译至中)
     - ^https:\/\/duckduckgo.com\/\?q=ltc(\+|%20)([^&]+).+ https://lingva.ml/auto/zh_HANT/$2 302
+
+    # gte xxx (Google 译至英)
+    - ^https:\/\/duckduckgo.com\/\?q=gte(\+|%20)([^&]+).+ https://translate.google.com/?sl=auto&tl=en&text=$2&op=translate 302
 
     # lte xxx (Lingva 译至英)
     - ^https:\/\/duckduckgo.com\/\?q=lte(\+|%20)([^&]+).+ https://lingva.ml/auto/en/$2 302
 
+    # gtj xxx (Google 译至日)
+    - ^https:\/\/duckduckgo.com\/\?q=gtj(\+|%20)([^&]+).+ https://translate.google.com/?sl=auto&tl=ja&text=$2&op=translate 302
+
     # ltj xxx (Lingva 译至日)
     - ^https:\/\/duckduckgo.com\/\?q=ltj(\+|%20)([^&]+).+ https://lingva.ml/auto/ja/$2 302
 
+    # gtf xxx (Google 译至灋)
+    - ^https:\/\/duckduckgo.com\/\?q=gtf(\+|%20)([^&]+).+ https://translate.google.com/?sl=auto&tl=fr&text=$2&op=translate 302
+
     # ltf xxx (Lingva 译至灋)
-    - ^https:\/\/duckduckgo.com\/\?q=ltj(\+|%20)([^&]+).+ https://lingva.ml/auto/fr/$2 302
+    - ^https:\/\/duckduckgo.com\/\?q=ltf(\+|%20)([^&]+).+ https://lingva.ml/auto/fr/$2 302
+
+    # gtd xxx (Google 译至德)
+    - ^https:\/\/duckduckgo.com\/\?q=gtd(\+|%20)([^&]+).+ https://translate.google.com/?sl=auto&tl=de&text=$2&op=translate 302
 
     # ltd xxx (Lingva 译至德)
-    - ^https:\/\/duckduckgo.com\/\?q=ltj(\+|%20)([^&]+).+ https://lingva.ml/auto/de/$2 302
+    - ^https:\/\/duckduckgo.com\/\?q=ltd(\+|%20)([^&]+).+ https://lingva.ml/auto/de/$2 302
 
     # ytb xxx (YouTube)
     - ^https:\/\/duckduckgo.com\/\?q=ytb(\+|%20)([^&]+).+ https://www.youtube.com/results?search_query=$2 302
@@ -146,6 +161,9 @@ http:
 
     # pvu xxx (Pixiv 用戶)
     - ^https:\/\/duckduckgo.com\/\?q=pvu(\+|%20)([^&]+).+ https://www.pixiv.net/search_user.php?nick=$2 302
+
+    # puid xxx (Pixiv 用戶ID)
+    - ^https:\/\/duckduckgo.com\/\?q=puid(\+|%20)([^&]+).+ https://www.pixiv.net/users/$2 302
 
     # eh xxx (E-hentai)
     - ^https:\/\/duckduckgo.com\/\?q=eh(\+|%20)([^&]+).+ https://e-hentai.org/?f_search=$2 302
